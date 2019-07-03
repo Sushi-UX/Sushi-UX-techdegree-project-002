@@ -10,6 +10,14 @@ import UIKit
 
 class EndViewController: UIViewController {
 
+    @IBOutlet weak var correctLabel: UILabel!
+    
+    @IBOutlet weak var incorrectLabel: UILabel!
+    
+    @IBOutlet weak var totalLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
