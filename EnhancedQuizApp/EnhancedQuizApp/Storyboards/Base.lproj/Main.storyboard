@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Znh-HG-yDb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -123,14 +123,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8j-GK-WRd">
                                 <rect key="frame" x="0.0" y="587" width="375" height="80"/>
                                 <subviews>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="csF-bZ-YZ5">
-                                        <rect key="frame" x="112" y="39" width="150" height="2"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="csF-bZ-YZ5">
+                                        <rect key="frame" x="55" y="39" width="150" height="2"/>
                                     </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctt-oz-1g2">
+                                        <rect key="frame" x="269" y="29.5" width="26" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.047058823529411764" green="0.13333333333333333" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="ctt-oz-1g2" firstAttribute="centerY" secondItem="q8j-GK-WRd" secondAttribute="centerY" id="P8X-GG-Mfb"/>
                                     <constraint firstAttribute="height" constant="80" id="XdP-Wn-t5X"/>
+                                    <constraint firstAttribute="trailing" secondItem="ctt-oz-1g2" secondAttribute="trailing" constant="80" id="bxw-to-2dA"/>
+                                    <constraint firstItem="csF-bZ-YZ5" firstAttribute="centerY" secondItem="q8j-GK-WRd" secondAttribute="centerY" id="m2f-KG-rbs"/>
+                                    <constraint firstItem="ctt-oz-1g2" firstAttribute="leading" secondItem="csF-bZ-YZ5" secondAttribute="trailing" constant="50" id="pGm-mK-2r2"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GlE-ih-Gkb">
@@ -229,6 +238,7 @@
                         <viewLayoutGuide key="safeArea" id="xN9-5i-pbp"/>
                     </view>
                     <connections>
+                        <outlet property="countLabel" destination="ctt-oz-1g2" id="5GK-Zu-fgd"/>
                         <outlet property="questionLabel" destination="n4D-IK-GRj" id="nFs-Mt-JwK"/>
                         <outlet property="quizTable" destination="Gah-VB-15q" id="F0z-oS-Srr"/>
                         <segue destination="Nee-pv-NZH" kind="show" identifier="QuizToEnd" id="5Gf-6r-460"/>
