@@ -37,8 +37,6 @@ class TheQuizViewController: UIViewController, UITableViewDelegate, UITableViewD
     var quizAnswerList = ["answer 1", "answer 2", "answer 3", "answer 4"]
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
-    
-    
     @IBAction func actionSubmit(_ sender: Any) {
         
     }
@@ -50,9 +48,13 @@ class TheQuizViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         quizTable.delegate = self
         quizTable.dataSource = self
-        quizModule.reset()
-        setup(check: true)
+
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animate: Bool){
+        quizModule.reset()
+        settup(check: true)
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,7 +62,7 @@ class TheQuizViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
-    func setup(check: Bool){
+    func settup(check: Bool){
         if(check){
             setCount()
             setQuestion()
@@ -91,7 +93,7 @@ class TheQuizViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func chooseAnswer() {
         quizModule.inputAnswer(input: quizModule.giveCurrentQuestion().checkAnswer(input: answerCheck))
-        setup(check: quizModule.moveToNextQuestion())
+        settup(check: quizModule.moveToNextQuestion())
         
     }
     

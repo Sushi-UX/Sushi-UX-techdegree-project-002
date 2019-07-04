@@ -14,13 +14,13 @@ class EndViewController: UIViewController {
 
     @IBOutlet weak var correctLabel: UILabel!
     
-    @IBOutlet weak var inCorrectLabel: UILabel!
+    @IBOutlet weak var InCorrectLabel: UILabel!
     
-    @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var TotalLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
+        settup()
         // Do any additional setup after loading the view.
     }
     
@@ -29,7 +29,7 @@ class EndViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func setup(){
+    func settup(){
         setCorrect()
         setIncorrect()
         setTotal()
@@ -40,11 +40,11 @@ class EndViewController: UIViewController {
     }
     
     func setIncorrect(){
-        inCorrectLabel.text = String(quizModule.giveIncorrectQuestionCount())
+        InCorrectLabel.text = String(quizModule.giveIncorrectQuestionCount())
     }
     
     func setTotal(){
-        totalLabel.text = String(quizModule.giveTotalQuestionCount())
+        TotalLabel.text = String(quizModule.giveTotalQuestionCount())
     }
 
 }

@@ -80,8 +80,8 @@
 		FB7A7F5F22CC45FE0087DA4B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				FB7A7F5622CC45DF0087DA4B /* LaunchScreen.storyboard */,
 				FB7A7F4E22CC45DD0087DA4B /* Main.storyboard */,
+				FB7A7F5622CC45DF0087DA4B /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
