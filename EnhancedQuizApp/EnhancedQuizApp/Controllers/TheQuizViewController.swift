@@ -38,7 +38,7 @@ class TheQuizViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
     @IBAction func actionSubmit(_ sender: Any) {
-        
+        chooseAnswer()
     }
     
     @IBOutlet weak var quizTable: UITableView!

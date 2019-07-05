@@ -96,7 +96,6 @@
         <!--Quiz in progress-->
         <scene sceneID="56T-nu-Kih">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1KD-kE-jkt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Quiz in progress" id="bBN-0e-LGt" customClass="TheQuizViewController" customModule="EnhancedQuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vxp-Xv-95i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -247,6 +246,7 @@
                         <segue destination="Nee-pv-NZH" kind="show" identifier="QuizToEnd" id="IKm-Sj-bxb"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1KD-kE-jkt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1488.8" y="26.53673163418291"/>
         </scene>
