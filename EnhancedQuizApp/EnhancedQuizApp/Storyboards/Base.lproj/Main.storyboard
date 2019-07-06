@@ -270,7 +270,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answered Right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd4-el-inF">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Questions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd4-el-inF">
                                                 <rect key="frame" x="20" y="20" width="170" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="9x0-Zg-lPm"/>
@@ -298,7 +298,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answered Wrong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfc-cH-aAt">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect Questions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfc-cH-aAt">
                                                 <rect key="frame" x="20" y="20" width="170" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="170" id="Y66-cd-fCX"/>
@@ -358,6 +358,8 @@
                         <viewLayoutGuide key="safeArea" id="r4g-0g-z1T"/>
                     </view>
                     <connections>
+                        <outlet property="InCorrectLabel" destination="AFw-C8-EQF" id="J8y-ux-0Em"/>
+                        <outlet property="TotalLabel" destination="8nI-aH-rM2" id="NeN-OF-z2m"/>
                         <outlet property="correctLabel" destination="RDt-Pv-TPq" id="A8b-Pf-Y8b"/>
                         <outlet property="incorrectLabel" destination="AFw-C8-EQF" id="E1q-ck-zmC"/>
                         <outlet property="totalLabel" destination="8nI-aH-rM2" id="4IT-8y-Ez1"/>
